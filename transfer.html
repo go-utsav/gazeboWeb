@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gazebo Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Gazebo Operations</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="department.html">Home</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <h3>Transfer</h3>
+
+        <a href="index.html"><button type="button" class="btn btn-primary">Back to selection</button></a>
+        <br>
+
+      
+
+        <div class="container my-4">
+            <div class="row">
+              <div class="col-12">
+                <!-- Flexbox to align card and form side by side -->
+                <div class="d-flex justify-content-between align-items-start">
+                  <!-- Left Hand Side: Card -->
+                  <div class="card" style="width: 18rem;">
+                    <img src="images/box.jpg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                      <p class="card-text">Box name</p>
+                    </div>
+                  </div>
+        
+                  <!-- Right Hand Side: Form -->
+                  <div class="ms-4" style="width: 100%;">
+                    <form>
+                      <!-- Transfer To Dropdown -->
+                      <div class="mb-3">
+                        <label for="transferTo" class="form-label">Transfer to</label>
+                        <select id="transferTo" class="form-select">
+                          <option selected>Select destination</option>
+                          <option value="sleeving">Sleeving</option>
+                          <option value="shipping">Shipping</option>
+                          <option value="packaging">Packaging</option>
+                        </select>
+                      </div>
+        
+                      <!-- Quantity Input (Only Numbers) -->
+                      <div class="mb-3">
+                        <label for="quantity" class="form-label">Enter Quantity</label>
+                        <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" min="1" required>
+                      </div>
+        
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
